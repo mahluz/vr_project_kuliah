@@ -24,5 +24,10 @@ export class HomePage {
       this.iab.create("assets/hauntedHouse/index.html",'_self','location=true');
     });
   }
+  videovr(){
+    this.platform.ready().then(()=>{
+      this.iab.create("assets/video_vr/index.html",'_self','location=true');
+    });
+  }
 
 }
